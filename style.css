@@ -1,0 +1,124 @@
+/*
+Theme Name: Pinboard Child
+Theme URI: 
+Description: A child theme based on the free Pinboard theme
+Author: Ken Zirkel
+Template: pinboard
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+body, p {
+	font-size: 105%;
+	}
+
+#wrapper {
+	max-width: 1200px;
+	}
+
+/* header */
+
+#masthead {
+	display:block;
+	margin-left: 50px;
+    float:none;
+}
+
+#site-title a {
+	color:#21759b;
+	display:block;
+	border:1px solid red;
+	cursor: pointer; 
+	cursor: hand; 
+	}
+
+h1.site-title {
+	font-size:60px;
+	margin:0;
+	padding:0;
+}
+.site-header-banner {
+    clear:all;
+}
+#site-description {
+	float:none;
+	display:block;
+	margin:0;
+	padding:0;
+	}
+h2.site-description {
+	padding:0;
+	margin-left:0;
+	margin-top:-12px;
+	margin-bottom:6px;
+}	
+
+.site-header-banner {
+	width:100%;
+	margin-bottom:-10px;
+	padding:0;
+	}
+
+#sidebar-header {
+	position:absolute;
+	top:20px;
+	left: 850px;
+	width:300px;
+	float:right;
+}	
+
+nav#access { 
+	margin:0; 
+	padding:0; 
+	}
+	
+.easy-profile-widget-inner {
+	font-size:15px;
+	line-height:180%;
+}	
+
+/* home */
+.entry-header h2.entry-title {
+    font-size:150%;
+    line-height:140%;
+ /*   margin-top:-50px; */
+    margin-bottom:6px;
+}
+figure {
+    -webkit-margin-before:0;
+    -webkit-margin-after:0;
+    -webkit-margin-start:0;
+    -webkit-margin-end:0;
+    margin-bottom:0;
+}
+
+.entry-container .entry-header p.entry-date {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(177, 177, 177);
+    margin:0;
+}  
+
+/* sidebar */
+.twocol { 
+	width: 100%;
+	}
+	
+#sidebar { 
+	color: #000; 
+	}
+.widget-title {
+    font-size:30px;
+}
+/* posts */
+
+.wp-post-image {
+    margin-bottom:30px;
+}
+
+.entry-content p {
+    font-size:120%;
+}
+
