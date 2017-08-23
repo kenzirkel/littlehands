@@ -26,13 +26,8 @@ body, p {
     float:none;
 }
 
-#site-title a {
-	color:#21759b;
-	display:block;
-	border:1px solid red;
-	cursor: pointer; 
-	cursor: hand; 
-	}
+/* overall site title  */
+
 
 h1.site-title {
 	font-size:60px;
@@ -41,6 +36,7 @@ h1.site-title {
 }
 .site-header-banner {
     clear:all;
+    border-top:10px solid #21759b;
 }
 #site-description {
 	float:none;
@@ -78,14 +74,39 @@ nav#access {
 	font-size:15px;
 	line-height:180%;
 }	
+.threefourthcol .threecol .entry {
+    margin:3%;
+}
+
+/* menu bar */
+
+#access {
+    background: #21759b;
+}
 
 /* home */
+.home .entry,
+.page-template .entry {
+    background: #4a9b09;
+    color:#fff;
+
+}
+
 .entry-header h2.entry-title {
     font-size:150%;
-    line-height:140%;
+    line-height:130%;
  /*   margin-top:-50px; */
     margin-bottom:6px;
+    font-weight:600;
+    letter-spacing:-.2px;
 }
+h2.entry-title a {
+    color: #fff;
+}
+h2.entry-title a:hover {
+    color:#d54e21;
+}
+
 figure {
     -webkit-margin-before:0;
     -webkit-margin-after:0;
@@ -96,22 +117,55 @@ figure {
 
 .entry-container .entry-header p.entry-date {
     font-weight: bold;
-    font-size: 16px;
-    color: rgb(177, 177, 177);
+    font-size: 15px;
+    color: #fff;
     margin:0;
+    margin-top:-30px;
+    background:none;
 }  
 
 /* sidebar */
 .twocol { 
 	width: 100%;
 	}
-	
+.onecol {
+    background:#ffe465;
+     margin:3%; 
+}
+
+.page-template .onecol {
+    background:#fff;
+     margin:0; 
+}
+
+.widget-area li:nth-child(1) {
+    border-top:1px solid red;
+    margin-top:10px;
+}
+
+.widget-area li {
+    border-bottom:1px solid red;
+}
+
+.onecol a {
+    color:#f37902;
+    font-weight:600;
+}
+
+.onecol a:hover {
+    color:#21759b;
+}
+
 #sidebar { 
 	color: #000; 
 	}
 .widget-title {
     font-size:30px;
+    font-weight:600;
+    letter-spacing:-.2px;
+    color:#21759b;
 }
+
 /* posts */
 
 .wp-post-image {
@@ -122,3 +176,19 @@ figure {
     font-size:120%;
 }
 
+h1.site-title {
+    font-weight:600;
+}
+
+/* pages */
+
+.page .entry,
+.single-post .entry {
+    width:92%;
+    margin-left: -10px;
+    margin-top: -18px;
+}
+
+.single-post .entry-meta {
+    color:#32bdf2;
+}
