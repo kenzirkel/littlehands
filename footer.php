@@ -4,7 +4,7 @@
 		<div id="footer">
 			<?php get_sidebar( 'footer' ); ?>
 			<div id="copyright">
-				<p class="copyright twocol"><?php pinboard_copyright_notice(); ?> | Site design by <a href="http://zirkel.com">Ken Zirkel</a> based on the <a href="https://www.onedesigns.com/">Pinboard theme</a>.</p>
+				<p class="copyright twocol"><?php pinboard_copyright_notice(); ?> | Site design by <a href="http://zirkel.com">Ken Zirkel</a> based on the <a href="https://www.onedesigns.com/wordpress-themes/pinboard">Pinboard theme by OneDesigns</a>.</p>
 				<?php if( pinboard_get_option( 'theme_credit_link' ) || pinboard_get_option( 'author_credit_link' )  || pinboard_get_option( 'wordpress_credit_link' ) ) : ?>
 					<p class="credits twocol">
 						<?php $theme_credit_link = '<a href="' . esc_url( 'https://www.onedesigns.com/themes/pinboard' ) . '" title="' . esc_attr( __( 'Pinboard Theme', 'pinboard' ) ) . '">' . __( 'Pinboard Theme', 'pinboard' ) . '</a>'; ?>
