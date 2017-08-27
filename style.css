@@ -92,7 +92,6 @@ h2.site-description {
 	position: relative;
 	z-index: 3;
 	padding:0 20px;
-	background:#111;
 	box-shadow:0 0 7px rgba(0, 0, 0, .1);
     padding:0;
 	margin:0;
@@ -106,7 +105,7 @@ h2.site-description {
 	padding:6px 24px;
 	color:#f0f0f0;
 	text-transform:uppercase;
-    background: black;
+    background: #f37902;
 }
 #secondary .menu-name::after {
     content: ": ";
@@ -119,7 +118,7 @@ h2.site-description {
 	list-style:none;
 	font-weight:600;
 	text-transform:uppercase;
-    background: black;
+    background: #f37902;
     width:100%;
 }
 
@@ -188,8 +187,10 @@ nav#access {
 
 
 /* home */
-.home .entry,
-.page-template .entry {
+
+/* when the .entry is in three column grid, give it green background */
+
+.threecol .entry {
     background: #4a9b09;
     color:#fff;
 }
@@ -243,12 +244,12 @@ figure {
 }
 
 .widget-area li:nth-child(1) {
-    border-top:1px solid red;
+    border-top:1px solid #f37902;
     margin-top:10px;
 }
 
 .widget-area li {
-    border-bottom:1px solid red;
+    border-bottom:1px solid #f37902;
 }
 
 .onecol a {

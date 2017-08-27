@@ -19,7 +19,23 @@
 				<<?php pinboard_title_tag( 'desc' ); ?> id="site-description"><h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				</div><!-- masthead -->
 			</div>  <!-- end wrapper div -->
+			<nav id="access"><!-- main nav -->
+				<a class="nav-show" href="#access">Show Navigation</a>
+				<a class="nav-hide" href="#nogo">Hide Navigation</a>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary_nav' ) ); ?>
+				<div class="clear"></div>
+			</nav><!-- #access -->
 			
+	
+				
+				
+<?php if ( ( '' != get_header_image() ) &&  ( false != get_header_image() ) ) : ?>
+	<div class="site-header-banner">
+    	<a href="<?php echo home_url( '/' ); ?>" rel="home">
+						<img src="<?php header_image(); ?>" alt="<?php bloginfo( 'name' ); ?>" ?>
+					</a>
+					</div>
+				<?php endif; ?>
 <!-- start secondary nav -->			
 <?php
 function get_menu_by_location( $location ) {
@@ -42,24 +58,10 @@ if (has_nav_menu($location)) :
 <span class="menu-name">'.esc_html($menu_obj->name).'</span><ul id="%1$s" class="%2$s">%3$s</ul></nav>'
     )); 
 endif;
-?>			
-<!-- end secondary nav -->			
-				
-				
-<?php if ( ( '' != get_header_image() ) &&  ( false != get_header_image() ) ) : ?>
-	<div class="site-header-banner">
-    	<a href="<?php echo home_url( '/' ); ?>" rel="home">
-						<img src="<?php header_image(); ?>" alt="<?php bloginfo( 'name' ); ?>" ?>
-					</a>
-					</div>
-				<?php endif; ?>
-				
+?><!-- end secondary nav -->						
 		<?php get_sidebar( 'header' ); ?>
 			<div class="clear"></div>
-			<nav id="access">
-				<a class="nav-show" href="#access">Show Navigation</a>
-				<a class="nav-hide" href="#nogo">Hide Navigation</a>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary_nav' ) ); ?>
-				<div class="clear"></div>
-			</nav><!-- #access -->
-		</header><!-- #header -->
+
+		
+				
+								</header><!-- #header -->
