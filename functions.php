@@ -11,3 +11,9 @@ function enqueue_parent_styles() {
 
 add_post_type_support( 'page', 'excerpt' );
 
+// Register Primary Navigation Menu
+register_nav_menus(
+    array(
+        'secondary_nav' => 'Secondary Menu', // You can add more menus here
+    )
+);

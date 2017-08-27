@@ -19,9 +19,36 @@
 				<<?php pinboard_title_tag( 'desc' ); ?> id="site-description"><h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				</div><!-- masthead -->
 			</div>  <!-- end wrapper div -->
-				<?php if ( ( '' != get_header_image() ) &&  ( false != get_header_image() ) ) : ?>
-					<div class="site-header-banner">
-					<a href="<?php echo home_url( '/' ); ?>" rel="home">
+			
+<!-- start secondary nav -->			
+<?php
+function get_menu_by_location( $location ) {
+    if( empty($location) ) return false;
+
+    $locations = get_nav_menu_locations();
+    if( ! isset( $locations[$location] ) ) return false;
+
+    $menu_obj = get_term( $locations[$location], 'nav_menu' );
+
+    return $menu_obj;
+}
+?>
+<?php $location = 'secondary_nav';
+if (has_nav_menu($location)) :
+    $menu_obj = get_menu_by_location($location); 
+    wp_nav_menu( array( 
+        'theme_location'  => $location,
+        'items_wrap'=> '<nav id="secondary">
+<span class="menu-name">'.esc_html($menu_obj->name).'</span><ul id="%1$s" class="%2$s">%3$s</ul></nav>'
+    )); 
+endif;
+?>			
+<!-- end secondary nav -->			
+				
+				
+<?php if ( ( '' != get_header_image() ) &&  ( false != get_header_image() ) ) : ?>
+	<div class="site-header-banner">
+    	<a href="<?php echo home_url( '/' ); ?>" rel="home">
 						<img src="<?php header_image(); ?>" alt="<?php bloginfo( 'name' ); ?>" ?>
 					</a>
 					</div>

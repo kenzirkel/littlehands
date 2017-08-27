@@ -55,11 +55,9 @@ h1.site-title {
 
 }
 
+/* header */
 
-.site-header-banner {
-    clear:all;
-    border-top:10px solid #21759b;
-}
+
 #site-description {
 	float:none;
 	display:block;
@@ -87,12 +85,99 @@ h2.site-description {
 	float:right;
 }	
 
+/* secondary navigation, ie, categories */
+
+#secondary {
+    font-size:14px;
+	position: relative;
+	z-index: 3;
+	padding:0 20px;
+	background:#111;
+	box-shadow:0 0 7px rgba(0, 0, 0, .1);
+    padding:0;
+	margin:0;
+    display:flex;
+}
+
+#secondary .menu-name {
+    float:left;
+    color: white;
+	display:block;
+	padding:6px 24px;
+	color:#f0f0f0;
+	text-transform:uppercase;
+    background: black;
+}
+#secondary .menu-name::after {
+    content: ": ";
+}
+
+#secondary ul {
+	float:left;
+	padding:0;
+	margin:0;
+	list-style:none;
+	font-weight:600;
+	text-transform:uppercase;
+    background: black;
+    width:100%;
+}
+
+#secondary li {
+	position:relative;
+	float:left;
+	padding:0;
+	margin:0;
+}
+
+#secondary ul li:first-child {
+	padding-left:0;
+}
+
+#secondary a {
+	display:block;
+	padding:6px 24px;
+	color:#f0f0f0;
+	text-decoration:none;
+	-moz-transition: background-color .25s ease, margin .25s ease;
+	-webkit-transition: background-color .25s ease, margin .25s ease;
+	-o-transition: background-color .25s ease, margin .25s ease;
+	-ms-transition: background-color .25s ease, margin .25s ease;
+	transition: background-color .25s ease, margin .25s ease;
+}
+
+#secondary a:hover,
+#secondary li.current_page_item > a,
+#secondary li.current-menu-item > a {
+	background:rgba(255, 255, 255, .2);
+	color:#fff;
+	text-decoration:none;
+}
+
+#secondary a span {
+	color:#999;
+	font-size:11px;
+	font-style:italic;
+	font-weight:normal;
+	line-height:1.62em;
+	text-transform:none;
+}
+
+
+
+/* main navigation (menu bar) */
+
 nav#access { 
 	margin:0; 
 	padding:0; 
     font-size:14px;
 	}
 	
+#access {
+    background: #21759b;
+}
+
+
 .easy-profile-widget-inner {
 	font-size:15px;
 	line-height:180%;
@@ -101,11 +186,6 @@ nav#access {
     margin:3%;
 }
 
-/* menu bar */
-
-#access {
-    background: #21759b;
-}
 
 /* home */
 .home .entry,
