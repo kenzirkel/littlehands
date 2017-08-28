@@ -304,15 +304,19 @@ figure {
 
 @media screen and (max-width: 760px)  {
     
+    #header {
+    
+    }    
     #masthead    {
-        margin:0;
         padding:0;
         width:100%;
+        margin: 50px 3px 10px 3px;
+        z-index: -50;
     }    
     
     h1.site-title {
-	    font-size:46px;
-        margin:26px 6px 22px 6px;
+	    font-size:56px;
+        margin-bottom: 22px;
 	    padding:6px;
         font-weight:600;
         line-height:110%;
@@ -371,15 +375,33 @@ figure {
 	margin-bottom:-10px;
 	padding:0;
 	}
-    
-#access {
-    background: none;
-}    
+
+    #access {
+        background: none;
+    }
+	#access:target .menu {
+		margin-top: 50px;
+		background: #111;
+	}   
     
     #sidebar .onecol,
     #sidebar .twocol {
         width:94%;
     }    
+
+	#access .nav-show,
+	#access a.nav-show:hover {
+		background: url(images/nav.png) no-repeat;
+		position: absolute;
+		top: 10px;
+    	right: 6%; 
+		display:block;
+		width: 40px;
+		height: 32px !important;
+		padding: 0;
+		border: none;
+		text-indent: -1000px;
+	}    
     
 }
 
