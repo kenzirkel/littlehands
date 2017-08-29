@@ -203,9 +203,6 @@ h2.site-description {
     margin:3%;
 }
 
-.fourcol { 
-    width: 23.9%;
-}
 
 
 /* home */
@@ -293,6 +290,10 @@ figure {
     color:#21759b;
 }
 
+.fourcol { 
+    width: 23.9%;
+}
+
 /* posts */
 
 .wp-post-image {
@@ -324,6 +325,12 @@ figure {
 
 
 @media screen and (max-width: 760px)  {
+    
+    #container {
+        margin:0;
+        padding:0;
+    }
+    
     
     #header {
     
@@ -407,10 +414,6 @@ figure {
 		background: #111;
 	}   
     
-    #sidebar .onecol,
-    #sidebar .twocol {
-        width:100%;
-    }    
 
 	#access .nav-show,
 	#access a.nav-show:hover {
@@ -430,6 +433,19 @@ figure {
         margin-top:4px;
         margin-bottom:4px;
     }    
+    
+    #sidebar {
+        margin:0;
+        padding:0;
+    }
+    
+    #sidebar .onecol,
+    #sidebar .twocol {
+        width:100%;
+        margin:10px 0 10px 0;
+        padding:0;
+    }    
+
     
 }
 
