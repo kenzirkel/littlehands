@@ -387,7 +387,7 @@ figure {
     
     #sidebar .onecol,
     #sidebar .twocol {
-        margin:3%;
+        width:100%;
     }    
 
 	#access .nav-show,
