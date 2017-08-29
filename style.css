@@ -79,6 +79,8 @@ h2.site-description {
 	background-image: url(images/instagram.png);
 }
 
+/* only affect .iconwrapper at larger sizes */
+
 @media screen and (min-width: 760px)  {
 
 .iconwrapper          {
@@ -89,6 +91,24 @@ h2.site-description {
     float:right;
 
 }
+
+}
+
+
+
+/* main navigation (menu bar) */
+
+#access { 
+	margin:0; 
+	padding:0; 
+    font-size:18px;
+    background: #21759b;
+}
+
+#access ul {
+    text-transform:none;
+}
+
 
 
 
@@ -101,7 +121,7 @@ h2.site-description {
 	padding:0 20px;
 	box-shadow:0 0 7px rgba(0, 0, 0, .1);
     padding:0;
-	margin:0;
+	margin: 24px 24px -6px 26px;
     display:flex;
 }
 
@@ -112,10 +132,13 @@ h2.site-description {
 	padding:6px 24px;
 	color:#f0f0f0;
 	text-transform:uppercase;
-    background: #f37902;
+    background:#4a9b09;
+/*    background: #f37902; */
+	font-weight:600;
 }
 #secondary .menu-name::after {
     content: ": ";
+	font-weight:600;
 }
 
 #secondary ul {
@@ -123,9 +146,10 @@ h2.site-description {
 	padding:0;
 	margin:0;
 	list-style:none;
-	font-weight:600;
+	font-weight:300;
 	text-transform:uppercase;
-    background: #f37902;
+    background:#4a9b09;
+/*    background: #f37902; */
     width:100%;
 }
 
@@ -169,16 +193,6 @@ h2.site-description {
 	text-transform:none;
 }
 
-}
-
-/* main navigation (menu bar) */
-
-nav#access { 
-	margin:0; 
-	padding:0; 
-    font-size:16px;
-    background: #21759b;
-}
 
 
 .easy-profile-widget-inner {
@@ -187,6 +201,10 @@ nav#access {
 }	
 .threefourthcol .threecol .entry {
     margin:3%;
+}
+
+.fourcol { 
+    width: 23.9%;
 }
 
 
@@ -356,7 +374,8 @@ figure {
         padding:0;
         display:inline;	
         width: 100%;
-  }
+        top:-12px;
+ }
 
 	
 	#header input#s {
@@ -398,7 +417,7 @@ figure {
 		background: url(images/nav.png) no-repeat;
 		position: absolute;
 		top: 10px;
-    	left: 6%; 
+    	right: 6%; 
 		display:block;
 		width: 40px;
 		height: 32px !important;

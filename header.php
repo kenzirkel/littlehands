@@ -19,6 +19,8 @@
 				<<?php pinboard_title_tag( 'desc' ); ?> id="site-description"><h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				</div><!-- masthead -->
 			</div>  <!-- end wrapper div -->
+		<?php get_sidebar( 'header' ); ?>
+			
 			<nav id="access"><!-- main nav -->
 				<a class="nav-show" href="#access">Show Navigation</a>
 				<a class="nav-hide" href="#nogo">Hide Navigation</a>
@@ -59,7 +61,6 @@ if (has_nav_menu($location)) :
     )); 
 endif;
 ?><!-- end secondary nav -->						
-		<?php get_sidebar( 'header' ); ?>
 			<div class="clear"></div>
 
 		
