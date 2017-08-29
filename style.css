@@ -370,7 +370,7 @@ figure {
         display:block;
         width:100%;
         position: relative;
-/*        top:10px;    */
+        height: 40px;
         margin:0; padding:0;
         right:0;
     }    
@@ -382,7 +382,7 @@ figure {
         padding:0;
         display:inline;	
         width: 100%;
-        top:-12px;
+      /*  top:-12px;  */
  }
 
 	
