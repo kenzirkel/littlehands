@@ -121,7 +121,8 @@ h2.site-description {
 	padding:0 20px;
 	box-shadow:0 0 7px rgba(0, 0, 0, .1);
     padding:0;
-	margin: 24px 24px -6px 26px;
+    margin:0;
+/*	margin: 24px 24px -6px 26px; */
     display:flex;
 }
 
@@ -435,7 +436,7 @@ figure {
     }    
     
     #sidebar {
-        margin:0;
+        margin:20px 0 0 0;
         padding:0;
     }
     
