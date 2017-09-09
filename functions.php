@@ -17,3 +17,4 @@ register_nav_menus(
         'secondary_nav' => 'Secondary Menu', // You can add more menus here
     )
 );
+

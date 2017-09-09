@@ -201,7 +201,7 @@ h2.site-description {
 	line-height:180%;
 }	
 .threefourthcol .threecol .entry {
-    margin:3%;
+    margin:  3% 2% 4% 2%;
 }
 
 
@@ -247,6 +247,22 @@ figure {
     margin-top:-30px;
     background:none;
 }  
+
+
+
+
+/* thumbnail images */
+
+
+.entry-thumbnail  {
+	background-color: #fff;
+	}
+
+.entry-thumbnail a:hover img {
+	opacity: .8;
+	}
+
+
 
 /* sidebar */
 .twocol { 
