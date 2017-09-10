@@ -60,8 +60,9 @@ h2.site-description {
 
 .site-header-banner {
 	width:100%;
-	margin-bottom:-10px;
+	margin-bottom:-6px;
 	padding:0;
+    border-bottom: 6px solid #21759b;
 	}
 
 #sidebar-header {
@@ -102,7 +103,7 @@ h2.site-description {
 	margin:0; 
 	padding:0; 
     font-size:18px;
-    background: #21759b;
+    background: #21759b;  /* our blue */
 }
 
 #access ul {

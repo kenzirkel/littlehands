@@ -26,7 +26,7 @@
 							<?php wp_link_pages( array( 'before' => '<p class="post-pagination">' . __( 'Pages:', 'pinboard' ), 'after' => '</p>' ) ); ?>
 							<?php the_tags( '<div class="entry-tags">', ' ', '</div>' ); ?>
 							<?php pinboard_social_bookmarks(); ?>
-							<?php pinboard_post_author(); ?>
+						
 						</footer><!-- .entry-utility -->
 					</div><!-- .entry -->
 					<?php comments_template(); ?>
