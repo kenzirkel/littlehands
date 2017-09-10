@@ -213,6 +213,7 @@ h2.site-description {
 .threecol .entry {
     background: #4a9b09;
     color:#fff;
+    padding-top:0;
 }
 
 
@@ -239,12 +240,16 @@ figure {
     margin-bottom:0;
 }
 
+figure.entry thumbnail {
+    margin-bottom:0;
+}
+
 .entry-container .entry-header p.entry-date {
     font-weight: bold;
     font-size: 15px;
     color: #fff;
     margin:0;
-    margin-top:-30px;
+    margin-top:0;
     background:none;
 }  
 
@@ -314,7 +319,7 @@ figure {
 /* posts */
 
 .wp-post-image {
-    margin-bottom:30px;
+    margin-bottom:6px;
 }
 
 .entry-content p {
