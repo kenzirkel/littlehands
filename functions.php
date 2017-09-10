@@ -29,15 +29,14 @@ function remove_featured_images_from_child_theme() {
 add_action( 'after_setup_theme', 'remove_featured_images_from_child_theme', 11 ); 
 
 
-// below not working???
-
+// for this to work you have to add ID's to the parent theme, unfortunately
 function remove_some_widgets(){
 
 	// Unregister some of the Pinboard sidebars
-	unregister_sidebar( 'Sidebar Bottom' );
-	unregister_sidebar( 'Sidebar Left' );
-	unregister_sidebar( '5' );
+	unregister_sidebar( 'sidebar-bottom' );
+	unregister_sidebar( 'sidebar-left' );
 	unregister_sidebar( 'header-1' );
+	unregister_sidebar( 'boxes' );
 
 }
 add_action( 'widgets_init', 'remove_some_widgets', 11 );
