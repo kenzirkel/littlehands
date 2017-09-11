@@ -41,4 +41,3 @@ function remove_some_widgets(){
 }
 add_action( 'widgets_init', 'remove_some_widgets', 11 );
 
-

@@ -62,7 +62,7 @@ h2.site-description {
 	width:100%;
 	margin-bottom:-6px;
 	padding:0;
-    border-bottom: 6px solid #21759b;
+    border-bottom: 6px solid #21759b; /* our blue */
 	}
 
 #sidebar-header {
@@ -134,7 +134,7 @@ h2.site-description {
 	padding:6px 24px;
 	color:#f0f0f0;
 	text-transform:uppercase;
-    background:#4a9b09;
+    background:#4a9b09;  /* our green */
 /*    background: #f37902; */
 	font-weight:600;
 }
@@ -212,7 +212,7 @@ h2.site-description {
 /* when the .entry is in three column grid, give it green background */
 
 .threecol .entry {
-    background: #4a9b09;
+    background: #4a9b09;   /* our green */
     color:#fff;
     padding-top:0;
 }
@@ -230,7 +230,7 @@ h2.entry-title a {
     color: #fff;
 }
 h2.entry-title a:hover {
-    color:#d54e21;
+    color:#d54e21;   /* our red */
 }
 
 figure {
@@ -275,7 +275,7 @@ figure.entry thumbnail {
 	width: 100%;
 	}
 .onecol {
-    background:#ffe465;
+    background:#ffe465;   /* our yellow */
      margin:3%; 
 }
 
@@ -286,12 +286,12 @@ figure.entry thumbnail {
 }
 
 .widget-area li:nth-child(1) {
-    border-top:1px solid #f37902;
+    border-top:1px solid #f37902;   /* our red */
     margin-top:10px;
 }
 
 .widget-area li {
-    border-bottom:1px solid #f37902;
+    border-bottom:1px solid #f37902;   /* our red */
 }
 
 .onecol a {
@@ -341,6 +341,53 @@ figure.entry thumbnail {
 .single-post .entry-meta {
     color:#32bdf2;
 }
+
+
+/* style shortcode for child pages */
+
+
+.ccchildpages  {
+    width:100%;
+}
+
+.ccchildpages h3 {
+font-size: 150%;
+line-height: 130%;
+margin-bottom: 6px;
+font-weight: 600;
+letter-spacing: -.2px;
+    font-family: "Oswald", sans-serif;
+}
+
+.ccpages_excerpt, 
+.ccpages_more {
+    font-size:105%;
+    margin-bottom:10px !important;
+}
+
+.simple .ccchildpage a {
+    color:white;
+    margin-top:30px;
+}
+
+.simple .ccchildpage a:hover {
+    color:#ffe465;   /* our yellow */;
+    margin-top:30px;
+    text-decoration:underline;
+}
+
+.ccchildpage {
+}
+
+.simple .ccchildpage {
+    background:#4a9b09;  /* our green */
+    color: white;
+    border-radius:0;
+    padding:20px;
+}
+
+
+
 
 
 @media screen and (max-width: 1152px) {
@@ -480,6 +527,9 @@ figure.entry thumbnail {
     
 }
 
+    
+    
+    
 
 @media screen and (-webkit-min-device-pixel-ratio : 1.5), screen and (min-device-pixel-ratio : 1.5) {
 
