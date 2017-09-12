@@ -262,10 +262,11 @@ figure.entry thumbnail {
 
 .entry-thumbnail  {
 	background-color: #fff;
-	}
+	transition: all .2s ease-in-out; 
+}
 
 .entry-thumbnail a:hover img {
-	opacity: .8;
+	transform: scale(1.1); 
 	}
 
 
