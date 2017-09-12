@@ -202,7 +202,7 @@ h2.site-description {
 	line-height:180%;
 }	
 .threefourthcol .threecol .entry {
-    margin:  3% 2% 4% 2%;
+    margin:  10px 6px 10px 6px;
 }
 
 
@@ -233,17 +233,9 @@ h2.entry-title a:hover {
     color:#d54e21;   /* our red */
 }
 
-figure {
-    -webkit-margin-before:0;
-    -webkit-margin-after:0;
-    -webkit-margin-start:0;
-    -webkit-margin-end:0;
-    margin-bottom:0;
-}
 
-figure.entry thumbnail {
-    margin-bottom:0;
-}
+
+
 
 .entry-container .entry-header p.entry-date {
     font-weight: bold;
@@ -259,6 +251,16 @@ figure.entry thumbnail {
 
 /* thumbnail images */
 
+
+figure {
+    -webkit-margin-before:0;
+    -webkit-margin-after:0;
+    -webkit-margin-start:0;
+    -webkit-margin-end:0;
+    margin-bottom:0;
+}
+
+
 .entry-thumbnail {
   position: relative;
     overflow: hidden;
@@ -269,7 +271,7 @@ figure.entry thumbnail {
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-    margin-bottom:0;
+    margin:0;
 }
 
 .entry-thumbnail a:hover img {
