@@ -259,14 +259,24 @@ figure.entry thumbnail {
 
 /* thumbnail images */
 
-
-.entry-thumbnail  {
-	background-color: #fff;
-	transition: all .2s ease-in-out; 
+.entry-thumbnail {
+  position: relative;
+    overflow: hidden;
+    background:#fff;
+}
+.entry-thumbnail img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+    margin-bottom:0;
 }
 
 .entry-thumbnail a:hover img {
-	transform: scale(1.1); 
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+    opacity:0.8;
 	}
 
 
