@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php if( is_front_page() ) : ?>
+		<?php get_header(); ?>
+	<?php else : ?>
+		<?php get_header( 'interior' ); ?>
+	<?php endif; ?>
 	<div id="container">
 		<section id="content" <?php pinboard_content_class(); ?>>
 			<?php if( have_posts() ) : the_post(); ?>

@@ -28,16 +28,9 @@
 				<div class="clear"></div>
 			</nav><!-- #access -->
 			
-	
+<!--	header code would go here -->
 				
-				
-<?php if ( ( '' != get_header_image() ) &&  ( false != get_header_image() ) ) : ?>
-	<div class="site-header-banner">
-    	<a href="<?php echo home_url( '/' ); ?>" rel="home">
-						<img src="<?php header_image(); ?>" alt="<?php bloginfo( 'name' ); ?>" ?>
-					</a>
-					</div>
-				<?php endif; ?>
+
 <!-- start secondary nav -->			
 <?php
 function get_menu_by_location( $location ) {

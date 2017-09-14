@@ -1,10 +1,12 @@
-<?php get_header(); ?>
 	<?php if( is_front_page() ) : ?>
-		<?php if( pinboard_get_option( 'slider' ) ) : ?>
+		<?php get_header(); ?>
+        <?php if( pinboard_get_option( 'slider' ) ) : ?>
 			<?php get_template_part( 'slider' ); ?>
 		<?php endif; ?>
 		<?php get_sidebar( 'wide' ); ?>
 		<?php get_sidebar( 'boxes' ); ?>
+	<?php else : ?>
+		<?php get_header( 'interior' ); ?>
 	<?php endif; ?>
 	<div id="container">
 		<section id="content" <?php pinboard_content_class(); ?>>
