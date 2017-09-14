@@ -62,8 +62,12 @@ h2.site-description {
 	width:100%;
 	margin-bottom:-6px;
 	padding:0;
-    border-bottom: 6px solid #21759b; /* our blue */
 	}
+
+.site-header-banner img {
+        border-bottom: 6px solid #21759b; /* our blue */
+
+}
 
 #sidebar-header {
 	position:absolute;
@@ -112,7 +116,9 @@ h2.site-description {
     text-transform:none;
 }
 
-
+#access li li {
+    background: #21759b;  /* our blue */
+}
 
 
 /* secondary navigation, ie, categories */
