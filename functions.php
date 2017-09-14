@@ -41,3 +41,14 @@ function remove_some_widgets(){
 }
 add_action( 'widgets_init', 'remove_some_widgets', 11 );
 
+//Removing some font choices
+
+if ( ! function_exists( 'pinboard_available_fonts' ) ) :
+
+function pinboard_available_fonts() {
+	return array(
+		'open-sans' => '"Open Sans", sans-serif',
+	);
+}
+endif;
+
