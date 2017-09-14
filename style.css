@@ -104,6 +104,8 @@ h2.site-description {
 	padding:0; 
     font-size:18px;
     background: #21759b;  /* our blue */
+    position:relative;
+    z-index: 4;
 }
 
 #access ul {
@@ -408,8 +410,12 @@ letter-spacing: -.2px;
 	.fourcol {
 		width: 33.3%;
 	}
+	.threefourthcol .page .threecol {
+		width: 100%;
+	}
+	
 
-
+ 
 @media screen and (max-width: 760px)  {
     
     #container {
@@ -517,8 +523,7 @@ letter-spacing: -.2px;
  
     
 
-    
-    
+     
     #secondary ul li {
         line-height:110%;
         margin-top:4px;
