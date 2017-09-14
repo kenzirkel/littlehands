@@ -51,4 +51,3 @@ function pinboard_available_fonts() {
 	);
 }
 endif;
-
